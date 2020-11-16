@@ -1,0 +1,677 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(251 251 251)0%, rgb(134 221 247 / 0%)20%), url(../img/ilha.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+main {
+	width: 1024px;
+	margin: 30px auto;
+	/*background-color: white;*/
+	border-top-right-radius: 36px;
+	border-top-left-radius: 36px;
+}
+
+header{
+	width: 100%;
+	height: 355px;
+	
+}
+
+	header img{
+		width: 1024px;
+		height: 355px;
+		/*object-position: 0px -10px;*/ 
+		object-fit: cover;
+		border-top-right-radius: 35px;
+		border-top-left-radius: 35px;
+	}
+
+	header figure:hover img{
+		transform: scale(1.01);
+		-webkit-transform: scale(1.01);
+	}
+
+
+	header figure:hover {
+		overflow: hidden;
+	}
+
+
+@import url('fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.menu {
+	height: 57px;
+	background-color: rgba(27, 2, 180, 0.87);
+	box-shadow: inset 0px 20px 30px rgb(27, 2, 80);  
+	position: relative;
+	top: -59px;
+}
+
+	.menu ul{
+		list-style: none;
+		width: 100%;
+		height: 56px;
+	}
+	.menu ul li {
+		float: left;
+		height: 57px;
+		text-align: center;
+		line-height: 55px;
+		width: 100px;
+	}
+
+	/*.menu ul li:hover{
+		background-color: rgba(15, 20, 224, 0.5);
+		border-bottom: 0.7px solid rgb(255, 255, 255);
+		box-shadow: inset 0px 10px 20px rgb(27, 2, 80, 0.87);
+	}*/
+
+	.menu ul li a{
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		font-size: 13px;
+		text-transform: uppercase;
+		display: block;
+		font-weight: bold;
+	}
+
+	.menu ul li a:hover{
+		background-color: rgba(15, 20, 224, 0.5);
+		border-bottom: 1px solid rgb(27, 2, 80);
+		box-shadow: inset 0px 10px 20px rgba(27, 2, 80, 0.87);
+		border-bottom: 3px solid rgb(236, 89, 2); 
+	}
+
+	.clear{
+		clear: both;
+	}
+
+	.buscar{
+		float: right !important;
+		position: relative;
+		right: 0;
+		width: 300px !important;
+	}
+
+	input {
+		height: 20px;
+		font-size: 14px;
+		padding: 5px;
+		outline: none;
+		border: 1px solid rgb(27, 2, 180);
+		border-radius: 20px;
+	}
+
+	button {
+	    height: 32px;
+	    font-size: 14px;
+	    padding: 0px 10px;
+	    outline: none;
+	    border: 1px solid rgb(27, 2, 180);
+	    border-radius: 14px;
+	}
+
+
+	.botao {
+		background-color: rgb(255, 255, 255);
+		border-color: white;
+		color: rgb(27, 2, 180);
+		min-width: 7px;
+	}
+
+	section {
+		padding: 0 25px;
+	}
+
+.titulo-secao{
+	font-family: "ARIAL";
+	text-transform: uppercase;
+	font-size: 20PX;
+	color: rgb(27, 2, 180);
+	text-shadow: 1px 2px 2px rgb(236, 89, 2);
+	background-image: url("../icones/favicon.png");
+	background-size: 34px 30px;
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	height: 35px;
+	line-height: 35px; 
+	margin-bottom: 30px;
+	border-bottom: 1px solid rgb(236, 89, 2);
+}
+
+
+/*.historia{
+	position: absolute;
+	margin-top: -40px;
+}*/
+
+.tudo {
+	position: relative;
+    top: -59px;
+}
+
+.historia {
+	background-color: white;
+	padding-top: 29px
+}
+
+.artigo-secao1 {
+	width: 100%;
+	/*min-height: 100px;*/
+	margin-bottom: 30px;
+}
+
+	.artigo-secao1 p{
+		width: 47.5%;
+		float: left;
+		text-align: justify;
+		line-height: 1.3;
+		text-indent: 4rem;
+	}
+
+	.artigo-secao1 img{
+		width: 45%;
+		height: 290px;
+		margin: 0 35px;
+		border: 1px solid white;
+		border-radius: 10px;
+	}
+
+.artigo-secao2 {
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 30px;
+	height: 520px;
+}
+
+	.artigo-secao2 img{
+		width: 30%;
+		height: 75%;
+		margin: 15px 35px;
+		float: left;
+		position: relative;
+		left: 50px;
+		border: 1px solid white;
+		border-radius: 7px;
+	}
+
+	.artigo-secao2 p{
+		width: 47.5%;
+		float: left;
+		text-align: justify;
+		line-height: 1.3;
+		position: relative;
+		right: -121px;
+		text-indent: 4rem;
+	}
+
+.sagas {
+	background-color: white;
+	padding-bottom: 2px;
+}
+
+#sayajins {
+	display: none;
+	padding-bottom: 2px;
+}
+
+	.img-background {
+	    /* background-image: url(../img/goku_vegeta.jpg); */
+	    background-image: linear-gradient(to bottom, rgb(251 251 251)0%, rgb(134 221 247 / 70%)110%), url(../img/goku_vegeta.jpg);
+	    background-repeat: no-repeat;
+	    background-size: 997px;
+	    height: 570px;
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+
+	.artigo-secao3 figure img {
+	    width: 100%;
+	    height: 300px;
+	    margin-bottom: 20px;
+	    border: 1px solid white;
+	    border-radius: 25px;
+	    object-fit: cover;
+	    object-position: 0% 55%;
+}
+	.artigo-secao3 p{
+		text-indent: 4rem;
+		line-height: 1.3;
+		text-align: justify;
+		margin-bottom: 10px;
+	}
+
+#freeza {
+	display: none;
+	padding-bottom: 2px;
+}
+
+	.img-background2 {
+	    /* background-image: url(../img/goku_vegeta.jpg); */
+	    background-image: linear-gradient(to bottom, rgb(251 251 251)5%, rgb(209 143 251 / 60%)90%), url(../img/Freeza.jpg);
+	    background-repeat: no-repeat;
+	    background-size: 997px;
+	    height: 520px;
+	    width: 100%;
+	    margin-bottom: 30px;
+	    background-position: 0% 15%;
+	}
+	.artigo-secao4 h3{
+		font-family: "ARIAL";
+		text-transform: uppercase;
+		font-size: 20PX;
+		color: rgb(216, 6, 6);
+		text-shadow: 1px 2px 2px rgb(0, 0, 0);
+		height: 35px;
+		line-height: 35px; 
+		margin-bottom: 15px;
+		border: 1px solid rgb(236, 89, 2);
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.artigo-secao4 figure img {
+	    width: 39%;
+	    height: 80%;
+	    margin: 15px 35px;
+	    float: left;
+	    position: relative;
+	    left: 10px;
+	    border:1px solid rgba(255, 255, 255, 0.1);
+	    border-radius: 35px;
+	}
+
+	.artigo-secao4 p {
+	    width: 44.5%;
+	    float: left;
+	    text-align: justify;
+	    line-height: 1.3;
+	    position: relative;
+	    right: -63px;
+	    text-indent: 4rem;
+	    margin-bottom: 5px;
+	}
+
+	#secao4-p3 {
+    width: 890px !important;
+    margin-top: 10px;
+    position: relative;
+    left: 45px;
+}
+
+#cell {
+	display: none;
+	padding-bottom: 2px;
+}
+
+.img-background3 {
+    /* background-image: url(../img/goku_vegeta.jpg); */
+    background-image: linear-gradient(to top, rgb(255 255 255)-5%, rgb(112 255 156 / 65%)90%), url(../img/gohan-cell.jpg);
+    background-repeat: no-repeat;
+    background-size: 997px;
+    height: 520px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-position: 0% 20%;
+}
+
+	.artigo-secao5 h3{
+		font-family: "ARIAL";
+		text-transform: uppercase;
+		font-size: 20PX;
+		color: rgb(216, 6, 6);
+		text-shadow: 1px 2px 2px rgb(0, 0, 0);
+		height: 35px;
+		line-height: 35px; 
+		margin-bottom: 15px;
+		border: 1px solid rgb(236, 89, 2);
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.artigo-secao5 p {
+	    width: 47.5%;
+	    float: left;
+	    text-align: justify;
+	    line-height: 1.3;
+	    text-indent: 4rem;
+	    margin-bottom: 5px;
+	    margin-top: 25px;
+	    margin-left: 10px;
+	}
+
+	.artigo-secao5 figure img {
+	    width: 39%;
+	    height: 80%;
+	    margin: 15px 35px;
+	    float: left;
+	    position: relative;
+	    left: 10px;
+	    border:1px solid rgba(255, 255, 255, 0.1);
+	    border-radius: 70px;
+	}
+
+#boo {
+	display: none;
+	padding-bottom: 2px;
+}
+
+.img-background4 {
+    /* background-image: url(../img/goku_vegeta.jpg); */
+    background-image: linear-gradient(to top, rgb(255 255 255)-10%, rgb(253 125 220 / 70%)90%), url(../img/Saga-majinboo.jpg);
+    background-repeat: no-repeat;
+    background-size: 997px;
+    height: 520px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-position: 0% 20%;
+}
+
+	.artigo-secao6 h3{
+		font-family: "ARIAL";
+		text-transform: uppercase;
+		font-size: 20PX;
+		color: rgb(216, 6, 6);
+		text-shadow: 1px 2px 2px rgb(0, 0, 0);
+		height: 35px;
+		line-height: 35px; 
+		margin-bottom: 15px;
+		border: 1px solid rgb(236, 89, 2);
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.artigo-secao6 figure img {
+    width: 20%;
+    height: 255px !important;
+    margin: 15px 35px;
+    float: left;
+    position: relative;
+    left: 69px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 33px;
+	}
+
+	.artigo-secao6 p {
+	    width: 42.5%;
+	    float: left;
+	    text-align: justify;
+	    line-height: 1.3;
+	    text-indent: 4rem;
+	    margin-bottom: 5px;
+	    margin-top: 25px;
+	    margin-left: 45px;
+	}
+
+	.artigo-secao7 h3{
+		font-family: "ARIAL";
+		text-transform: uppercase;
+		font-size: 20PX;
+		color: rgb(216, 6, 6);
+		text-shadow: 1px 2px 2px rgb(0, 0, 0);
+		height: 35px;
+		line-height: 35px; 
+		margin-bottom: 15px;
+		border: 1px solid rgb(236, 89, 2);
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.artigo-secao7 figure img {
+    width: 30%;
+    height: 251px !important;
+    margin: 15px 35px;
+    float: left;
+    position: relative;
+    left: 69px;
+    top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 33px;
+	}
+
+	.artigo-secao7 p {
+	    width: 38.5%;
+	    float: left;
+	    text-align: justify;
+	    line-height: 1.3;
+	    text-indent: 4rem;
+	    margin-bottom: 5px;
+	    margin-top: 25px;
+	    margin-left: 45px;
+	    position: relative;
+	    left: 107px;
+	    top: 20px;
+	}
+
+	#secao7-p2{
+		position: relative !important;
+    	left: 30px;
+	}
+
+	#secao7-img2 {
+    	position: relative;
+    	left: 140px;
+   		top: -41px;
+    	height: 232px !important;
+    	width: 250px;
+	}
+.curiosidades{
+	background-color: white;
+	padding-top: 15px;
+}
+
+	.artigo-secao8 p {
+	    width: 42.5%;
+	    float: left;
+	    text-align: justify;
+	    line-height: 1.3;
+	    text-indent: 4rem;
+	    margin-bottom: 5px;
+	    margin-top: 25px;
+	    margin-left: 45px;
+	}
+
+	#secao8-p1 {
+		position: relative;
+		bottom: -90px;
+	}
+
+	#secao8-p2 {
+	    width: 90% !important;
+	    position: relative;
+	    bottom: 0px;
+	    margin-bottom: 15px;
+	}
+
+
+.secao8_figure img {
+    width: 30%;
+    height: 200px;
+    margin: 15px 35px;
+    float: left;
+    position: relative;
+    left: 69px;
+    top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 33px;
+}
+
+	.artigo-secao8 iframe {
+    width: 400px;
+    height: 275px;
+    position: relative;
+    left: 133px;
+}
+
+	
+	#secao8_img1 {
+		width: 100% !important;
+		height: 300px !important;
+		margin-bottom: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+    	border-radius: 25px;
+    	object-position: 0% 40%;
+    	object-fit: cover;
+
+	}
+
+	#secao8-img4 {
+		width: 30%;
+	    height: 251px;
+	    margin: 15px 35px;
+	    float: left;
+	    position: relative;
+	    left: 69px;
+	    top: 20px;
+	    border: 1px solid rgba(255, 255, 255, 0.1);
+	    border-radius: 33px;
+		float: left;
+		margin-bottom: 50px;
+	}
+
+	#secao8-p3 {
+		float: left;
+		position: relative;
+    	bottom: -70px;
+    	margin-left: 70px;
+	}
+
+	.avaliacao {
+		padding-bottom: 35px;
+	}
+
+
+	.avaliacao h3 {
+		font-family: "ARIAL";
+		text-transform: uppercase;
+		font-size: 20px;
+		color: rgb(216, 6, 6);
+		text-shadow: 1px 2px 2px rgb(0, 0, 0);
+		height: 35px;
+		line-height: 35px; 
+		margin-bottom: 15px;
+	}
+
+	.secao9 {
+		width: 100%;
+		height: 325px;
+		padding: 20px;
+	}
+
+	#center {
+		padding: 20px;
+		width: 625px;
+		height: 325px;
+		border: 1px solid rgb(27, 2, 80); 
+		background-color: rgba(255,255,255, 0.77);
+		float: left;
+	}
+
+	#center input {
+		height: 20px;
+		font-size: 14px;
+		padding: 5px;
+		margin: 5px;
+		outline: none;
+		border: 1px solid rgb(27, 2, 180);
+		border-radius: 20px;
+	}
+
+	#left {
+  	width: 178px;
+    height: 366px;
+    float: left;
+    background-color: white;
+    padding: 0 !important;
+    margin-left: -25px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+	#right {
+   width: 178px;
+    height: 366px;
+    float: left;
+    background-color: white;
+    padding: 0 !important;
+    margin-right: -25px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+	#email {
+		width: 440px !important;
+	}
+
+	#confirmacao {
+		margin-bottom: 20px;
+	}
+
+	#comentario {
+		width: 380px !important;
+		padding: 5px;
+		outline: none;
+	}
+
+	#enviar {
+		background-color: rgb(27, 2, 180);
+		color: white;
+		position: relative;
+		left: 165px;
+		box-shadow: inset 0px 13px 7px rgba(27, 2, 80, 0.87);
+	}
+
+.contato {
+	background-color: white;
+}
+
+	.avaliacao img {
+		width: 50px;
+	}
+
+	#es4 {
+	    width: 40px !important;
+	    position: relative;
+	    bottom: 5px;
+	}
+
+	#es5 {
+	    position: relative;
+	    bottom: 0px;
+	}
+
+.rodape {
+    width: 100%;
+    height: 137px !important;
+    background-color: rgb(16, 9, 80);
+    color: white;
+    position: relative;
+    top: -59px;
+}
+
+.rodape p {
+	position: relative;
+    bottom: -111px;
+	text-align: center; 
+}
+
+.rodape a i{
+	font-size: 40px;
+	text-align: center;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	color: rgb(236, 89, 2);
+}
+
+.up{
+	position: fixed;
+	bottom: 27px;
+	right: 65px; 
+}
